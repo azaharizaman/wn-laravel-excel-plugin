@@ -14,7 +14,7 @@ return [
             ],
 
             'aliases' => [
-                'Excel'   => '\Maatwebsite\Excel\Facades',
+                'Excel'   => '\Maatwebsite\Excel\Facades\Excel',
             ],
 
             'config_namespace' => 'excel',
