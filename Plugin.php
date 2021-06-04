@@ -1,13 +1,21 @@
 <?php namespace AzahariZaman\Excel;
 
-use Backend;
+use App;
+use Event;
+use Config;
 use System\Classes\PluginBase;
+use Illuminate\Foundation\AliasLoader;
 
 /**
  * Excel Plugin Information File
  */
 class Plugin extends PluginBase
 {
+    /**
+     * Ensure plugin runs on command line too
+     */
+    public $elevated = true;
+
     /**
      * Returns information about this plugin.
      *
@@ -20,18 +28,8 @@ class Plugin extends PluginBase
             'description' => 'azaharizaman.excel::plugin.description',
             'author'      => 'Azahari Zaman',
             'icon'        => 'icon-file-excel-o',
-            'homepage'    => ''
+            'homepage'    => 'https://github.com/azaharizaman/wn-laravel-excel-plugin',
         ];
-    }
-
-    /**
-     * Register method, called when the plugin is first registered.
-     *
-     * @return void
-     */
-    public function register()
-    {
-
     }
 
     /**
@@ -50,7 +48,7 @@ class Plugin extends PluginBase
      * Boots (configures and registers) any packages found within this plugin's packages.load configuration value
      *
      * @see https://luketowers.ca/blog/how-to-use-laravel-packages-in-october-plugins
-     * @author Azahari Zaman <azaharizaman@gmail.com>
+     * @author Luke Towers <wintercms@luketowers.ca>
      */
     public function bootPackages()
     {

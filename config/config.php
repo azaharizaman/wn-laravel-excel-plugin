@@ -1,4 +1,10 @@
-<?php return [
+<?php 
+
+use Maatwebsite\Excel\Excel;
+
+return [
+
+
     'packages' => [
         'maatwebsite/excel' => [
             'providers' => [
@@ -6,7 +12,7 @@
             ],
 
             'aliases' => [
-                'Excel'   => '\Maatwebsite\Excel\Facades\Excel',
+                'Excel'   => '\Maatwebsite\Excel\Facades',
             ],
 
             'config_namespace' => 'excel',
