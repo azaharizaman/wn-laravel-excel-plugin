@@ -1,0 +1,26 @@
+{
+    "name": "azaharizaman/wn-laravel-excel-plugin",
+    "type": "winter-plugin",
+    "description": "Laravel-Excel wrapper for WinterCMS",
+    "homepage": "https://github.com/azaharizaman/wn-laravel-excel-plugin",
+    "keywords": ["winter", "wintercms", "laravel", "laravel-excel", "excel", "import", "export", "report"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Azahari Zaman",
+            "email": "azaharizaman@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/azaharizaman/wn-laravel-excel-plugin/issues",
+        "source": "https://github.com/azaharizaman/wn-laravel-excel-plugin"
+    },
+    "require": {
+        "php": "^7.0|^8.0",
+        "composer/installers": "~1.0",
+        "maatwebsite/excel": "^3.1"
+    },
+    "extra": {
+        "installer-name": "excel"
+    }
+}
